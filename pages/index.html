@@ -8,27 +8,60 @@
     
 </head>
 
-
 <body>
+    <!-- page One -->
         
-
-    <main>
-        <div class="illustration">
-            <img src="../resource/bg-illustration.svg" />
-        </div>
+    <main class="pageOne">
         <section>
             <div class="logo">
                 <img src="../resource/logo-qr-generator.svg" />
             </div>
-            <form action="">
+            <div class="btn-input-qrcode">
                 <div >
-                    <input placeholder="Enter on url" type="text" name="url" />
-                    <button type="submit">
-                       QrCode
-                    </button>
+                    <input placeholder="Enter on url" type="url" id="url" name="url" />
+                    <button class="btnQrCode btn" >
+                        QrCode              
+                   </button>
                 </div>
-            </form>
+            </div>
         </section>
     </main>
+
+
+    <!-- page two -->
+    <div class="pageTwo">
+        <header >
+            <button class="btnLogo">
+                <div class="logo">        
+                    <img src="../resource/logo-qr-generator.svg" />
+                </div>
+            </button>
+           
+         </header>
+     
+         <main>
+             <section>
+                  <div  id="qrcode"></div>
+                 
+                  <div class="buttons">
+                     <button class="btn downloadQrCode" >
+                         Download  &#x2193;
+                     </button >
+                     <button class="btn shareQrCode" >
+                         Share   &#x1F517;
+                     </button>
+                  </div>
+             </section>
+         </main>
+    
+    </div>
+    <script src="../js/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/qrcode.js"></script>
+    <script src="../js/script.js"></script>
+  
+
+
 </body>
 </html>
